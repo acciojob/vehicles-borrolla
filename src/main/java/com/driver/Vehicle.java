@@ -16,6 +16,7 @@ public class Vehicle {
         this.currentDirection += direction;
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
+//add ed one line
 
     public void move(int speed, int direction){
         //set the values of currentSpeed and currentDirection
