@@ -6,5 +6,14 @@ public class Main {
         mercedes.move(40, 0);
         mercedes.accelerate(20);
         mercedes.accelerate(-60);
+
+        Boat myBoat = new Boat("Yacht", 10);
+        // Using the setName and setCapacity methods
+        myBoat.setName("Speedboat");
+        myBoat.setCapacity(12);
+        // Displaying the boat details
+        myBoat.displayBoatDetails();
+
+
     }
 }
