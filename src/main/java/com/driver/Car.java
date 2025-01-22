@@ -20,7 +20,7 @@ public class Car extends Vehicle {
         this.seats = seats;
 
     }
-
+//one line added
     public void changeGear(int newGear){
         this.currentGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
