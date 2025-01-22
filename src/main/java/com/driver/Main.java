@@ -7,5 +7,4 @@ public class Main {
         mercedes.accelerate(20);
         mercedes.accelerate(-60);
     }
-}
-//cahngeknc maaace
+}//changes made
