@@ -8,3 +8,4 @@ public class Main {
         mercedes.accelerate(-60);
     }
 }
+//cahngeknc maaace
