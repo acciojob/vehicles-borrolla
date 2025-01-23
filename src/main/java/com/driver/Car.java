@@ -1,13 +1,13 @@
 package com.driver;
 
 public class Car extends Vehicle {
-    private final int wheels;
+    private  int wheels;
     private  String type;
-    private final int doors;
-    private final int gears;
-    private final boolean isManual;
+    private  int doors;
+    private  int gears;
+    private boolean isManual;
     private  int currentGear;
-    private final int seats;
+    private  int seats;
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
@@ -18,6 +18,7 @@ public class Car extends Vehicle {
         this.isManual = isManual;
         this.type = type;
         this.seats = seats;
+        this.currentGear = 1;
 
     }
 //one line added
@@ -31,17 +32,12 @@ public class Car extends Vehicle {
         move(newSpeed, newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
+    public int getWheels() {
+        return wheels;
+    }
 
     public String getType() {
         return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getWheels() {
-        return wheels;
     }
 
     public int getDoors() {
@@ -60,12 +56,36 @@ public class Car extends Vehicle {
         return currentGear;
     }
 
+    public int getSeats() {
+        return seats;
+    }
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+    public void setGears(int gears) {
+        this.gears = gears;
+    }
+
+    public void setManual(boolean manual) {
+        isManual = manual;
+    }
+
     public void setCurrentGear(int currentGear) {
         this.currentGear = currentGear;
     }
 
-    public int getSeats() {
-        return seats;
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
 }
 //one more line added
